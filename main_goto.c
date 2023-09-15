@@ -1,13 +1,9 @@
 #include "main.h"
 
 int main (void) {
-    for (int i = 0; i < 26; i++) {
-        printf(" ");
-    }
+    tab(27);
     printf("TWO TO TEN\n");
-    for (int i = 0; i < 13; i++) {
-        printf(" ");
-    }
+    tab(14);
     printf("CREATIVE COMPUTING  MORRISTOWN NEW JERSEY\n");
     printf("\n");
     printf("\n");
@@ -42,7 +38,7 @@ line_223:;
 line_270:;
     E = (int)(N + (N * R));
 line_280:;
-    int A = (int)(rand() % 9 + 2); // potentially incorrect
+    int A = (int)(rand() % 9 + 2);
     printf("\n");
 line_285:;
     printf("PLACE YOUR BET ... YOU HAVE %d TO SPEND.\n", M);
