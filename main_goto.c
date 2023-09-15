@@ -1,10 +1,8 @@
 #include "main.h"
 
 int main (void) {
-    tab(27);
-    printf("TWO TO TEN\n");
-    tab(14);
-    printf("CREATIVE COMPUTING  MORRISTOWN NEW JERSEY\n");
+    printf("%*c%s", 27, ' ', "TWO TO TEN\n");
+    printf("%*c%s", 14, ' ', "CREATIVE COMPUTING  MORRISTOWN NEW JERSEY\n");
     printf("\n");
     printf("\n");
     printf("\n");

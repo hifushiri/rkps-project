@@ -5,8 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <stdarg.h>
 
-// #include "func.c"
-void tab(int count);
 
 #endif
