@@ -1,2 +1,3 @@
+# ignore executable files
 *.out
 *.o
