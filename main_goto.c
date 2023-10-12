@@ -1,8 +1,8 @@
 #include "main.h"
 
 int main (void) {
-    printf("%*c%s", 27, ' ', "TWO TO TEN\n");
-    printf("%*c%s", 14, ' ', "CREATIVE COMPUTING  MORRISTOWN NEW JERSEY\n");
+    printf("%*c%s", 28, ' ', "TWO TO TEN\n");
+    printf("%*c%s", 15, ' ', "CREATIVE COMPUTING  MORRISTOWN NEW JERSEY\n");
     printf("\n");
     printf("\n");
     printf("\n");
@@ -39,7 +39,7 @@ line_280:;
     int A = (int)(rand() % 9 + 2);
     printf("\n");
 line_285:;
-    printf("PLACE YOUR BET ... YOU HAVE %d TO SPEND.\n", M);
+    printf("PLACE YOUR BET ... YOU HAVE $ %d  TO SPEND.? ", M);
     int B; scanf("%d", &B);
     printf("\n");
     if (B < 0) {goto line_297;}
@@ -50,8 +50,8 @@ line_297:;
     printf("YOU MAY NOT BET AGAINST YOURSELF.\n");
     goto line_285;
 line_300:;
-    printf("YOUR LUCKY LIMIT CARD IS A %d\n", A);
-    printf("YOU MUST COME WITHIN %d WITHOUT GOING OVER TO WIN.\n", A);
+    printf("YOUR LUCKY LIMIT CARD IS A  %d\n", A);
+    printf("YOU MUST COME WITHIN  %d  WITHOUT GOING OVER TO WIN.\n", A);
     printf("\n");
     printf("HERE WE GO\n");
 line_322:;
@@ -59,31 +59,31 @@ line_322:;
     printf("\n");
     D = D + 1;
     int C = (int)(rand() % 9 + 1);
-    printf("CARD #%d IS A %d.YOU ARE TRYING TO COME NEAR %d\n", D, C, E);
+    printf("CARD # %d  IS A  %d .YOU ARE TRYING TO COME NEAR  %d\n", D, C, E);
     T = T + C;
     if (T <= N) {goto line_380;}
-    printf("YOUR TOTAL IS OVER THE NUMBER%d AN AUTOMATIC LOSS!\n", N);
+    printf("YOUR TOTAL IS OVER THE NUMBER %d  AN AUTOMATIC LOSS!\n", N);
     goto line_570;
 line_380:;
-    printf("YOUR TOTAL IS %d DO YOU WANT TO CONTINUE\n", T);
+    printf("YOUR TOTAL IS  %d  DO YOU WANT TO CONTINUE? ", T);
     char Q[1]; scanf("%s", Q);
     printf("\n");
     if (!strcmp(Q, "Y")) {goto line_322;}
     if (T < N - A || T > N) {goto line_550;}
-    printf("YOU WIN!  THE NUMBER WAS %d YOUR GUESS TOTAL WAS %d\n", N, T);
+    printf("YOU WIN!  THE NUMBER WAS  %d  YOUR GUESS TOTAL WAS %d\n", N, T);
     printf("WITHIN YOUR LIMIT CARD.\n");
     M = M + B;
     goto line_600;
 line_550:;
-    printf("YOU BLEW IT!  THE NUMBER WAS %d, OUTSIDE YOUR LIMIT BY \n", N);
+    printf("YOU BLEW IT!  THE NUMBER WAS  %d , OUTSIDE YOUR LIMIT BY \n", N);
     printf("%d\n", (N - A) - T);
     printf("\n");
 line_570:;
     M = M - B;
 line_600:;
-    printf("YOU NOW HAVE %d IN CASH TO BET IN THE NEXT GAME!\n", M);
+    printf("YOU NOW HAVE $ %d  IN CASH TO BET IN THE NEXT GAME!\n", M);
     if (M <= 0) {goto line_655;}
-    printf("WOULD YOU LIKE TO PLAY THE NEXT GAME\n");
+    printf("WOULD YOU LIKE TO PLAY THE NEXT GAME? ");
     scanf("%s", Q);
     if (!strcmp(Q, "Y")) {goto line_223;}
     printf("HOPE YOU HAD FUN.\n");
