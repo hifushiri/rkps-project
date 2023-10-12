@@ -1,8 +1,11 @@
-test_goto: main_goto.c func.c
-	gcc -c func.c
-	gcc -c main_goto.c
-	gcc func.o main_goto.o -o project_goto.out -I.
-	./project_goto.out
+test_c: source/main.c
+	gcc -c source/main.c -o build/main.o
+	gcc build/main.o -o build/project_goto.out -I.
+	./build/project_goto.out
 
-clear:
-	rm *.out
+test_bas: source/main.bas
+	vintbas source/main.bas
+
+clean:
+	rm -r *.out
+	rm -r *.o
